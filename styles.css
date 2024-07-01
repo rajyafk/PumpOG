@@ -1,74 +1,120 @@
 body {
+    font-family: 'Arial', sans-serif;
+    background: url('background.jpeg') no-repeat center center/cover;
+    color: #333; /* Darker text color for better contrast */
     margin: 0;
     padding: 0;
-    font-family: 'Arial', sans-serif;
-    background: url('background.jpeg') no-repeat center center fixed;
-    background-size: cover;
-    color: #fff;
-    text-align: center;
-}
-
-.container {
-    background-color: rgba(0, 0, 0, 0.5);
-    padding: 20px;
-    border-radius: 10px;
-    max-width: 800px;
-    margin: 50px auto;
 }
 
 header {
+    background-color: rgba(255, 64, 129, 0.9); /* Semi-transparent pink background */
+    color: white;
+    padding: 1rem;
     display: flex;
-    flex-direction: column;
+    justify-content: space-between;
     align-items: center;
 }
 
 .logo {
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    margin-bottom: 20px;
+    font-size: 1.5rem;
 }
 
-h1 {
-    font-size: 3em;
-    margin: 0;
-}
-
-.intro {
-    margin: 20px 0;
-}
-
-.intro p {
-    font-size: 1.2em;
-    margin: 10px 0;
-}
-
-.buttons a img {
-    width: 50px;
-    height: 50px;
-    margin: 10px;
-    transition: transform 0.3s;
-}
-
-.buttons a img:hover {
-    transform: scale(1.1);
-}
-
-.features {
-    margin: 20px 0;
-}
-
-.features ul {
+nav ul {
     list-style: none;
+    margin: 0;
     padding: 0;
+    display: flex;
 }
 
-.features li {
-    font-size: 1.2em;
-    margin: 10px 0;
+nav ul li {
+    margin-left: 1rem;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.hero-section {
+    padding: 4rem 2rem;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent white background */
+}
+
+.hero-title {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.hero-intro {
+    font-size: 1.2rem;
+    max-width: 600px;
+    margin: 0 auto 2rem auto;
+}
+
+.cta-button {
+    background-color: #ff4081;
+    color: white;
+    border: none;
+    padding: 1rem 2rem;
+    margin-top: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #ff79a1;
+}
+
+.social-buttons {
+    margin-top: 1rem;
+}
+
+.social-buttons a {
+    margin-right: 10px;
+}
+
+.social-buttons img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+#about, #fun {
+    padding: 4rem 2rem;
+    background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent white background */
+    text-align: center;
+}
+
+#about h2, #fun h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+}
+
+#about p, #fun p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+}
+
+#about ul, #fun ul {
+    list-style-type: disc;
+    margin-left: 2rem;
+}
+
+#about ul li, #fun ul li {
+    margin-bottom: 0.5rem;
 }
 
 footer {
-    margin-top: 20px;
-    font-size: 0.8em;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
 }
